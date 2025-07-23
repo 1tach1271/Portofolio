@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Portfolio - Shashi Yadav</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff0f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffc8dd;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #6a0572;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #6a0572;
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 3px dashed #ffa7c4;
+      padding-bottom: 10px;
+    }
+
+    .skills-grid, .certifications-grid, .projects-grid, .hackathons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background: #ffe5ec;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .cute-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ffc8dd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌸 Shashi Yadav's Cute Portfolio 🌸</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#hackathons">Hackathons</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>🏡 Welcome!</h2>
+    <p>Hi, I'm Shashi Yadav! A bubbly and ambitious AI/ML enthusiast who loves solving real-world problems and building beautiful tech solutions. Let's explore my world 🌼✨</p>
+  </section>
+
+  <section id="about">
+    <h2>👩‍💻 About Me</h2>
+    <p>I'm an engineering student passionate about Artificial Intelligence, Machine Learning, and creative coding. I love participating in hackathons, developing cool projects, and learning new technologies. Also, I enjoy indoor games, volleyball, and hiking! 🏐🌸</p>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ Skills</h2>
+    <div class="skills-grid">
+      <div class="box"><div class="cute-icon">💻</div><strong>Web Development</strong><br>HTML, CSS, JavaScript, React</div>
+      <div class="box"><div class="cute-icon">📊</div><strong>AI/ML</strong><br>Python, Scikit-Learn, TensorFlow, OpenCV</div>
+      <div class="box"><div class="cute-icon">🧮</div><strong>Mathematics</strong><br>Linear Algebra, Probability, Statistics</div>
+      <div class="box"><div class="cute-icon">🧠</div><strong>Problem Solving</strong><br>Data Structures, Algorithms, Competitive Coding</div>
+    </div>
+  </section>
+
+  <section id="hackathons">
+    <h2>🏆 Hackathons</h2>
+    <div class="hackathons-grid">
+      <div class="box">Winner at AI Ideathon 2024 for predicting crop diseases using CV.</div>
+      <div class="box">Finalist in SRM Hackfest 2023 – real-time sign language interpreter.</div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>📚 Certifications</h2>
+    <div class="certifications-grid">
+      <div class="box">Certified in Machine Learning by Coursera (Andrew Ng)</div>
+      <div class="box">Deep Learning Specialization – by Deeplearning.ai</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>🧪 Projects</h2>
+    <div class="projects-grid">
+      <div class="box">
+        <strong>Real-time Object Detection</strong><br>
+        Used SSD to identify objects in live camera feed.
+      </div>
+      <div class="box">
+        <strong>Banking App Simulator</strong><br>
+        A Java-based OOP system for basic banking functionality.
+      </div>
+      <div class="box">
+        <strong>Voice Command Calculator</strong><br>
+        Python voice recognition app for math operations.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    💌 Connect with me: <strong>shashi.yadav@email.com</strong> | 🌐 Hosted with 💖 on GitHub Pages
+  </footer>
+</body>
+
+</html>
